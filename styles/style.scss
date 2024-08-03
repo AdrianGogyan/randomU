@@ -1,0 +1,71 @@
+@use "v" as *;
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $bg-main;
+    font-family: $fontFam;
+    display: flex;
+    justify-content: center;
+
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: $main-color;
+    // border-top-left-radius: 50px;
+    // border-top-right-radius: 50px;
+    border-radius: 50px;
+    margin-top: 10vh;
+    width: 50vh;
+    height: 80vh;
+    box-shadow: 0 0 20px 1px black;
+    
+}
+
+.p1>img{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 3.5em;
+}
+span{
+    margin:0;
+    font-size:0.8em;
+}
+
+.socialMedia{
+    margin: 1em auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // flex-direction: row;
+    &-icon{
+        width: 1.5em;
+    }
+}
+
+.about{
+    width: 80%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.btn{
+    margin: 2em;
+    &>button{
+        border: 1px white solid;
+        border-radius: 20px;
+        padding:1em;
+        background: none;
+        width: 10rem;
+        color: white;
+    }
+}
